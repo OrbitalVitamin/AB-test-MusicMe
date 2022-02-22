@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="frog.css">
+		<script src="https://cdn.jsdelivr.net/npm/@aspnet/signalr@1.1.2/dist/browser/index.js"></script>
+		<script src="signalRScript.js"></script>
+	</head>
+	<title> OilMe </title>
+
+	<body>
+		<div id="cotainer">
+			<div id="end">
+				<h1 id="end-text"> THE END </h1>
+			</div>
+			<div class="container" id="pre-game-content">
+				<div class="StartButton" id="start-button" onclick="testUnique()">
+					<h2 id="Button"> Start </h1>
+				</div>
+				<h2 id="searching"> Searching for a match... </h1>
+
+			</div>
+			<div class="container" id="game-content">
+					<div class="scores">
+						<h1 id="myScore"> Your Score: 0 </h1>
+						<h1 id="opScore"> Opponent's Score: 0</h1>
+					</div>
+					<div id="container-game">
+					<div class="answer-frame" id="ans-frame1">
+						<div class="AnswerButton" id="ans1" onclick="checkAnswer(0)"> </div>
+		 				<div id="ans1-text">Title</div>
+					</div>
+					<div class="answer-frame" id="ans-frame2">
+						<div class="AnswerButton" id="ans2" onclick="checkAnswer(1)""></div>
+						<div id="ans2-text">Title</div>
+					</div>
+
+				<div class="replay-button" id="replay" onclick="playAudio()">
+					<img src="" alt="replay" onclick="playAudio()"/>
+				</div>
+				<div class="answer-frame" id="ans-frame3">
+					<div class="AnswerButton" id="ans3" onclick="checkAnswer(2)"></div>
+					<div id="ans3-text">Title</div>
+				</div>
+				<div class="answer-frame" id="ans-frame4">
+					<div class="AnswerButton" id="ans4" onclick="checkAnswer(3)"> </div>
+					<div id="ans4-text">Title</div>
+				</div>
+			</div>
+			</div>
+
+		</div>
+
+	</body>
+	<audio controls id="audio-control">
+ 		<source src="" type="audio/mpeg" id="audio-src">
+		Audio element is not supported, try to change your browser.
+	</audio>
+
+</html>

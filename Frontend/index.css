@@ -1,0 +1,197 @@
+body {
+	background-color: #cdcdcc;
+}
+
+h1 {
+	color: black;
+	size: 10px;
+}
+
+#container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.container{
+	width: 100%;
+	height: 100%;
+}
+
+#game-content{
+	width: 100%;
+	height: 100%;
+	top: 1%;
+  left: 0;
+  visibility:hidden;
+	position: absolute
+}
+
+#pre-game-content{
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+}
+
+#end {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	visibility: hidden;
+	z-index: 10;
+}
+
+#end-text{
+	width: 100%;
+	top: 1%;
+}
+
+#searching{
+	font-size: 30px;
+  	line-height: 10em;
+    visibility:hidden;
+	margin-top: 7.5%;
+	animation: fadein 7.5s infinite;
+	text-align: center;
+}
+
+
+@keyframes fadein {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+
+  100% {
+  	opacity: 1;
+  }
+}
+
+
+.AnswerButton {
+	width: 14vw;
+  height: 14vw;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 15%;
+	padding: 5px 5px 5px 5px;
+
+}
+
+.overlay{
+	width: 14vw;
+    height: 14vw;
+    position: fixed;
+    z-index: 10;
+}
+
+.overlay.hover{
+	width: 15vw;
+    height: 15vw;
+    background: green;
+	opacity: 0.2;
+
+}
+
+
+.answer-frame{
+	display:inline-block;
+	text-align: center;
+	position:relative;
+
+}
+
+
+#ans-frame1{
+	margin-left: 25%;
+}
+
+#ans-frame2{
+	float: right;
+	margin-right: 25%;
+
+}
+
+
+#ans-frame3{
+	margin-left: 25%;
+
+}
+#ans-frame4{
+	float: right;
+	margin-right: 25%;
+}
+
+
+#opScore{
+	float: right;
+	top: 1%;
+	margin-right: 2%;
+
+}
+
+#myScore{
+	float: left;
+	top: 0.3%;
+	margin-left: 2%;
+
+}
+
+
+.AnswerButton:hover{
+	color: gray;
+	background-color:rgba(0, 0, 0, 0.1);
+
+
+}
+#container-game {
+	width: 100%;
+}
+.StartButton {
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 10px;
+	margin: 25px 25px 25px 25px;
+	padding: 5px 5px 5px 5px;
+}
+
+#start-button:hover{
+	color: green;
+}
+
+#audio-control{
+	visibility: hidden;
+}
+
+#spin-button{
+	border-radius: 50%;
+	background: #73AD21;
+  padding: 20px;
+	width: 50px;
+	height: 50px;
+	margin: auto;
+}
+
+#replay{
+	width: 10vw;
+  height: 10vw;
+	margin: auto;
+}
+
+#replay:after{
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+
+img {
+    width:100%;
+    height:100%;
+}
+
+.scores {
+	width: 100%;
+	display:inline-block;
+}
